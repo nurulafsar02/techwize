@@ -9,11 +9,11 @@
   <!--boostrap link-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-   <!--font link-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="css/style.css">
+  <!--font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -28,14 +28,15 @@
         <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
           <div class="navbar-nav navber-margin-left">
             <a class="nav-link active ms-5" aria-current="page" href="#">Home</a>
-            <a class="nav-link ms-5" href="#">Course</a>
+            <a class="nav-link ms-5" href="#course">Course</a>
             <a class="nav-link ms-5" href="#">Deals</a>
             <a class="nav-link ms-5" href="#">Success</a>
             <a class="nav-link ms-5" href="#">About</a>
             <a class="nav-link ms-5 navber-margin-right" href="#">Register</a>
-            <button class="btn btn-outline-primary active ms-5" type="submit">Register</button>
           </div>
         </div>
+      </div>
+      <div><button class="btn btn-outline-primary btn-margin-right active ms-5" type="submit">Register</button>
       </div>
     </nav>
     <!--slider start-->
@@ -88,7 +89,7 @@
     <!--slider end-->
   </header>
   <main>
-    <section class="container">
+    <section class="container" id="course">
       <div class=" d-flex align-items-center justify-content-center">
         <h1>Discover Our Populer <br> Course </h1>
       </div>
@@ -254,7 +255,7 @@
           when locking at its layout</p>
       </div>
       <div>
-        <div class=" d-flex align-items-center justify-content-center">
+        <div class=" d-lg-flex align-items-center justify-content-center d-sm-block ">
           <div class="col ms-3">
             <img src="images/stu- (1).png" class="card-img-top" alt="...">
             <h5>Awlad Hossain</h5>
@@ -276,37 +277,141 @@
             <p>Web Developer</p>
           </div>
         </div>
-        <button type="button" class="btn btn-primary margin-center">Register Now</button>
-
       </div>
     </section>
+    <div class="d-flex align-items-center justify-content-center">
+      <button type="button" class="btn btn-primary">Register Now</button>
+    </div>
     <!--student success story end-->
-    <section class="margin-center">
-      <h3>Some Student Feedback</h3>
-      <p>it is a long established fact that a reader will be distracted by the <br> readable content of a page
-        when locking at its layout</p>
+    <section class="margin-center my-5 d-flex align-items-center justify-content-center ">
+
+      <div>
+        <h3>Some Student Feedback</h3>
+        <p>it is a long established fact that a reader will be distracted by the <br> readable content of a page
+          when locking at its layout</p>
+      </div>
     </section>
     <section class="container d-flex ">
       <div class="container border border-dark p-3 w-50">
         <img src="images/comma.png">
-      <p>it is a long established fact that a reader will be distracted by the <br> readable content of a page
-        when locking at its layout</p>
+        <p>it is a long established fact that a reader will be distracted by the <br> readable content of a page
+          when locking at its layout</p>
 
       </div>
-    <div class="container border border-dark p-3 ms-3 w-50">
-       <img src="images/comma.png">
-      <p>it is a long established fact that a reader will be distracted by the <br> readable content of a page
-        when locking at its layout</p>
+      <div class="container border border-dark p-3 ms-3 w-50">
+        <img src="images/comma.png">
+        <p>it is a long established fact that a reader will be distracted by the <br> readable content of a page
+          when locking at its layout</p>
+      </div>
+
+    </section>
+    <!--Frequently Asked Qustion-->
+    <section class="margin-center my-5 d-flex align-items-center justify-content-center">
+      <div>
+        <h3>Frequently Asked Qustion</h3>
+        <p>it is a long established fact that a reader will be distracted by the <br> readable content of a page
+          when locking at its layout</p>
       </div>
     </section>
-
-
-
+    <!--accordian start-->
+    <section class="container">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Difference Between Flexbox vs Grid
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Grid and flexbox-</strong> The basic difference between CSS Grid Layout and CSS Flexbox Layout is
+              that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for
+              two-dimensional layout - rows, and columns at the same time
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Difference Between Bootstrap vs Tailwind
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong> Tailwind</strong> offers predesigned widgets to build a site from scratch with fast UI
+              development. <strong> Bootstrap</strong> comes with a set of pre-styled responsive, mobile-first
+              components that possess a definite UI kit. Tailwind CSS uses a set of utility classes to create a neat UI
+              with more flexibility and uniqueness.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              What Is CSS Box Model?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong> The CSS Box Model</strong>
+              In CSS, the term "box model" is used when talking about design and layout. The CSS box model is
+              essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the
+              actual content.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+              What Is Semantics Tag?
+            </button>
+          </h2>
+          <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              The <strong>HTML semantics Tag</strong>refers to the tags that provide meaning to an HTML page rather than
+              just presentation. It makes HTML more comprehensible by better defining the different sections and layout
+              of web pages
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--accordian end-->
+    <section class=" d-none d-lg-block ">
+      <h3 class="d-flex align-items-center justify-content-center my-5 ">Trusted by over 800+ Companies</h3>
+      <div class="d-flex  container" style="margin-left: 200px;">
+        <img class="ms-5" style="width: 100px;" src="images/com (1).png" alt="">
+        <img class="ms-5" style="width: 100px;" src="images/com (2).png" alt="">
+        <img class="ms-5" style="width: 100px;" src="images/com (3).png" alt="">
+        <img class="ms-5" style="width: 100px;" src="images/com (4).png" alt="">
+        <img class="ms-5" style="width: 100px;" src="images/com (5).png" alt="">
+        <img class="ms-5" style="width: 100px;" src="images/com (6).png" alt="">
+      </div>
+    </section>
   </main>
   <!--boostrap script-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
 </body>
-
+<footer>
+  <section class="d-flex align-items-center justify-content-center bg-dark text-white mt-5 pt-5">
+    <div>
+      <h1>TECHWIZE</h1>
+      <p>Office Basurhat ,Companigonj,Noakhali
+        <br>Nurul Afsar Moshin
+        <br> Privacy policy - Tearms Of use
+      </p>
+    </div>
+    
+  </section>
+</footer>
 </html>
